@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT JAWAHAR</title>
+    <link rel="icon" type="" href="favicon.png">
+    
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="head">
+        <span class="block">Get additional 5% off on Prepaid Orders | Code: BOATHEAD|<a href="#">shop now</a>
+        </span>
+  </header> 
+  <nav class="flex items-center justify-between p-4 bg-white shadow-sm sticky top-0 z-50">
+    <!-- Logo --> 
+    <a href="https://www.boat-lifestyle.com/" >
+      <img class="h-12 w-16"src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_black_24889e30-925c-4185-a028-9fef497a8e44.svg?v=1732879339"alt=""> </a>   
+    <div class="hidden lg:flex items-center space-x-8 desktop-nav-links">
+      <a style="font-size: 20px;" href="#" class="text">Categories</a>
+      <a style="font-size: 20px;" href="https://www.boat-lifestyle.com/collections/product-personalization"
+        class="text">boAt personalisation</a>
+      <a style="font-size: 20px;" href="https://www.boat-lifestyle.com/pages/bulk-orders"
+        class="text">Corporate orders</a>
+      <a style="font-size: 20px;" href="https://www.boat-lifestyle.com/pages/gifting-with-boat"
+        class="text">Gifting store</a>
+      <a style="font-size: 20px;" href="#" class="text" id="morelink">More</a>
+    </div>    
+    <div class="flex items-center space-x-4">
+      <div class="relative hidden sm:block">
+        <input type="text" placeholder="Search speaker"
+          class="w-96 px-4 py-2 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500 search-input">
+      </div>      
+      <button id="mobile-menu-btn"
+        class="lg:hidden p-2 text-gray-500 hover:text-red-400 focus:outline-none mobile-menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://www.boat-lifestyle.com/pages/payday-sale"><img id="img1" src="https://www.boat-lifestyle.com/cdn/shop/files/Black-Friday-gif.gif?v=1764141669" class="d-block w-100" alt="1"></a>    
+    </div>
+    <div class="carousel-item">
+      <img id="img1" src="https://www.boat-lifestyle.com/cdn/shop/files/chrome_eon_desktop_9cb39aa9-1024-46d7-9a59-34d7a6792518.png?v=1763706308" alt="2">
+    </div>
+    <div class="carousel-item">
+      <img id="img1" src="https://www.boat-lifestyle.com/cdn/shop/files/Zenith_Pro_22f624e7-cc42-40a2-a080-f42256e39cb9.png?v=1761197368" class="d-block w-100" alt="3">
+    </div>
+    <div class="carousel-item">
+      <img id="img1" src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard_1_copy_2_54619113-614c-471f-a3d6-3899672ec8d7_1440x.png?v=1752664929" class="d-block w-100" alt="4">
+    </div>
+    <div class="carousel-item">
+      <img id="img1" src="https://www.boat-lifestyle.com/cdn/shop/files/silicon-cover-new-web_1600x.jpg?v=1742367044" class="d-block w-100" alt="5">
+    </div>
+    <div class="carousel-item">
+      <img id="img1" src="https://www.boat-lifestyle.com/cdn/shop/files/desktop_banner_eae66d9b-996f-4a84-b945-b8df00a062ad_1600x.png?v=1750938656" class="d-block w-100" alt="6">
+    </div>
+  </div>
+  <button class="carousel1" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel1" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  
+  <div>
+    <a href="https://www.boat-lifestyle.com/collections/daily-deals"><h3 class="SALE">Sales is live ↓ OPEN AND SEE MY ANIMATION ↓ </h3> </a>
+  </div>
+
+  
+  
+ 
+
+
+                                <!-- 1 -->
+
+
+    <div id="Tab1" class="tab-section">
+  <div class="product-row">
+    <div class="product-card">
+      <a href="./demo.html">
+        <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/701_ANC.png?v=1756381019">
+      </a>
+      <span class="badge">✅ EXTRA 200₹ OFF</span>
+      <p class="short-title">40 Hrs Playback</p>
+      <p class="rating">⭐4.8</p>
+
+      <p class="product-name">boAt Airdopes Prime 701 ANC</p>
+      <div class="price-row">
+        <ins class="price">₹1,999/-</ins>
+        <input type="color" class="color-dot" value="#d4ffd1">
+        <input type="color" class="color-dot" value="#ffffff">
+        <input type="color" class="color-dot" value="#d1e7ff">
+      </div>
+      <p class="discount">75% OFF <del>₹7,990</del></p>
+    </div>
+
+    <div class="product-card">
+      <a href="./img 2.html">
+        <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Storm_Call_3.jpg?v=1712640243">
+      </a>
+      <span class="badge">✅ EXTRA 200₹ OFF</span>
+      <p class="short-title">BT CALL</p>
+      <p class="rating">⭐4.8</p>
+
+      <p class="product-name">boAt Rockerz 110</p>
+      <div class="price-row">
+        <ins class="price">₹699/-</ins>
+        <input type="color" class="color-dot" value="#d4ffd1">
+        <input type="color" class="color-dot" value="#ffffff">
+        <input type="color" class="color-dot" value="#d1e7ff">
+      </div>
+      <p class="discount">72% OFF <del>₹2,409</del></p>
+    </div>
+
+    <div class="product-card">
+      <a href="./img3.html">
+        <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/63_pro_LR.png?v=1724672727">
+      </a>
+      <span class="badge trend">✨ Trending</span>
+      <p class="short-title">30W RMS Sound</p>
+      <p class="rating">⭐4.8</p>
+
+      <p class="product-name">boAt Party Pal 63 Pro</p>
+      <div class="price-row">
+        <ins class="price">₹999/-</ins>
+        <input type="color" class="color-dot" value="#d4ffd1">
+        <input type="color" class="color-dot" value="#ffffff">
+        <input type="color" class="color-dot" value="#d1e7ff">
+      </div>
+      <p class="discount">80% OFF <del>₹4,990</del></p>
+    </div>
+
+    <div class="product-card">
+      <a href="./img4.html">
+        <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/413_lifestyle.png?v=1752737623">
+      </a>
+      <span class="badge trend">✨ TRENDING ✨</span>
+      <p class="short-title">60 Hrs Playback</p>
+      <p class="rating">⭐4.8</p>
+
+      <p class="product-name">boAt Rockerz 413</p>
+      <div class="price-row">
+        <ins class="price">₹2,199/-</ins>
+        <input type="color" class="color-dot" value="#d4ffd1">
+        <input type="color" class="color-dot" value="#ffffff">
+        <input type="color" class="color-dot" value="#d1e7ff">
+      </div>
+      <p class="discount">72% OFF <del>₹7,990</del></p>
+    </div>
+
+    <div class="product-card">
+      <a href="./img5.html">
+        <img class="product-img" src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard_12_copy_5_800x.png?v=1725944855">
+      </a>
+      <span class="badge">✅ EXTRA 200₹ OFF</span>
+      <p class="short-title">80 Hrs Playback</p>
+      <p class="rating">⭐4.8</p>
+
+      <p class="product-name">boAt Storm Call 3 Plus</p>
+      <div class="price-row">
+        <ins class="price">₹1,449/-</ins>
+        <input type="color" class="color-dot" value="#d1e7ff">
+        <input type="color" class="color-dot" value="#ff0000">
+        <input type="color" class="color-dot" value="#d1e7ff">
+      </div>
+      <p class="discount">69% OFF <del>₹7,499</del></p>
+    </div>
+
+  </div>
+</div>
+
+    <div>
+      <p>Shop by Categories</p>
+      <div class="Scolleimg">        
+        <a href=""><img class="imgRun"  src="https://www.boat-lifestyle.com/cdn/shop/files/Gaming-Headphones_small.png?v=1684842853" alt=""></a>
+        <a href=""><img class="imgRun"  src="https://www.boat-lifestyle.com/cdn/shop/files/Soundbars_d9a7bdfd-e780-4581-ab85-f2e86f84cd28_small.png?v=1684842854" alt=""></a>
+        <a href=""><img class="imgRun" src="https://www.boat-lifestyle.com/cdn/shop/files/Wired-Earphones_small.png?v=1684842854" alt=""></a>
+        <a href=""><img class="imgRun" src="https://www.boat-lifestyle.com/cdn/shop/files/Wired-Headphones_small.png?v=1684842854" alt=""></a>
+        <a href=""><img  class="imgRun"src="https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Speaker_small.png?v=1684842854" alt=""></a>
+        <a href=""><img class="imgRun" src="https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Headphones_small.png?v=1684842854" alt=""></a>
+        <a href=""><img class="imgRun" src="https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Headphones_small.png?v=1684842854" alt=""></a>
+        <a href=""><img class="imgRun" src="https://www.boat-lifestyle.com/cdn/shop/files/nirvana_52689447-c1bb-4bb8-8fa0-0496e3715fc0_small.png?v=1727229889" alt=""></a>
+        <a href=""><img class="imgRun" src="https://www.boat-lifestyle.com/cdn/shop/files/Smartwatches_88f12bcf-24bd-4e3a-aacb-ecc204f62179_small.png?v=1684842853" alt=""></a>
+        <a href=""><img  class="imgRun"src="https://www.boat-lifestyle.com/cdn/shop/files/Neckbands_bc6343f4-622f-4ebd-bb36-205643c3bf78_small.png?v=1684842854" alt=""></a> 
+        <a href=""><img class="imgRun" src="https://www.boat-lifestyle.com/cdn/shop/files/True-wireless-earbuds_small.png?v=1684842854" alt=""></a>    
+      </div>
+    </div>
+<p>Explore Bestsellers</p>
+<video class="hoverVideo" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_RUxbhR7CvjkNtlFUDxgw9.mp4" type="video/mp4">
+</video>
+
+<video class="hoverVideo" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_OyJHanx4QSdUN3OVGTO7C.mp4" type="video/mp4">
+</video>
+
+<video class="hoverVideo" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_CpsRIdJWtpXyFN3enwbXd.mp4" type="video/mp4">
+</video>
+
+<video class="hoverVideo" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_Bejc8URjU1NSXdhabLCmD.mp4" type="video/mp4">
+</video>
+
+
+
+<script>
+  // Select all videos with class "hoverVideo"
+  const video = document.querySelectorAll(".hoverVideo");
+
+  videos.forEach(video => {
+    // Play on hover 
+    video.addEventListener("mouseenter", () => {
+      video.play();
+    });
+
+    // Pause on leave
+    video.addEventListener("mouseleave", () => {
+      video.pause();
+    });
+  });
+</script>
+
+  <div>
+      <div class="row">
+      <div class="features" >
+        <div class="features">
+          <img class="firstIMG" src="https://www.boat-lifestyle.com/cdn/shop/files/jshf_2-01-final-01_small.svg?v=1744365804" alt="">
+          <h2 class="MONTH">12+3 months</h2>
+          <h2 class="WAR">warranty🔗</h2>
+        </div>
+        <div class="features">
+          <img class="GSTimg" src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334302_small.svg?v=1682336123" alt="">
+          <h2 class="GST" >GST</h2>    
+        </div>
+        <div class="features">
+          <img class="FReeImg" src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334303_small.svg?v=1682336123" alt="">
+          <h2 class="FRee">Free Express</h2>
+          <h2 class="DEL">Delivery</h2>
+        </div>
+        <div class="features">
+          <img class="DAYSImh" src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334304_small.svg?v=1682336123" alt="">
+          <h2 class="DAYS">7-days Replacement</h2>   
+        </div>
+      </div>
+        </div>     
+
+
+        <style>
+    video {
+      width: 300px;
+      margin: 35px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<p>Join the Tribe</p>
+<video class="hoverVideo" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_j1TwOEeceKYOJc7d7mAim.mp4" type="video/mp4">
+</video>
+
+<video class="hoverVideo" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_Bejc8URjU1NSXdhabLCmD.mp4" type="video/mp4">
+</video>
+
+<video class="hoverVideo" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_OyJHanx4QSdUN3OVGTO7C.mp4" type="video/mp4">
+</video>
+
+<video class="hoverVideo" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_CpsRIdJWtpXyFN3enwbXd.mp4" type="video/mp4">
+</video>
+
+
+
+<script>
+  // Select all videos with class "hoverVideo"
+  const videos = document.querySelectorAll(".hoverVideo");
+
+  videos.forEach(video => {
+    // Play on hover
+    video.addEventListener("mouseenter", () => {
+      video.play();
+    });
+
+    // Pause on leave
+    video.addEventListener("mouseleave", () => {
+      video.pause();
+    });
+  });
+</script>
+
+    <div>  
+    <a href="https://www.boat-lifestyle.com/collections/nirvana-by-boat"><h3 class="NIrHELI">Explore Nirvana</h3> </a> <br>
+    <div class="nirvana">
+    <a href="https://www.boat-lifestyle.com/collections/nirvana-by-boat"><img class="nirvanaIMG"src="https://www.boat-lifestyle.com/cdn/shop/files/Strips_895f0826-e273-4982-8101-433c815815c1_1600x.png?v=1752817596" alt="1"></a></div>
+  <a href="https://www.boat-lifestyle.com/collections/daily-deals"><h3 class="BIG">Big Deals</span></h3> </a>
+   <div class="tab"> 
+    <button class="tablinks" onclick="openTab(event, 'Tab1')" style="margin-left: 25px;"> All Deals</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab2')" style="margin-left: 65px;">True Wireless Earbuds</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab3')" style="margin-left: 75px;">Earbude</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab4')" style="margin-left: 85px;">SmartWatch</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab5')" style="margin-left: 90px;">Speaker And Soundbar</button>
+  </div>
+  <br>
+  <!-- Tab Content -->
+  <div id="Tab1" class="tab-section"  >
+    <div class="product-row">
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/boat-airdopes-192">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/1_1.gif?v=1686650188&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">40 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Airdopes 192</p>
+        <div class="price-row">     
+          <p class="color">
+            <ins class="PRFONTSZ">₹:1,399/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">72% OFF<del>₹:4,999</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/storm-call-3-smartwatch">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Storm_Call_3.jpg?v=1712640243&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">BT CALL</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Strom Call 3</p>
+        <div class="price-row">
+            <ins class="price">₹:1,399/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">84% OFF<del>₹: 4,999</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/boat-party-pal-63-bluetooth-speaker-with-30w-boat-signature">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/63_pro_LR.png?v=1724672727&width=200" alt="">
+          </a>
+          <div class="badge trend">✨Trending</div>
+          <p class="short-title">30W RMS Sound</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Party Pal 63 Pro</p>
+        <div class="price-row">
+            <ins class="price">₹:4,499/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">65% OFF<del>₹: 12,990</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/boat-rockerz-413-wireless-headphones">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/413_lifestyle.png?v=1752737623&width=200" alt="">
+          </a>
+          <div class="badge trend">✨  TRENDING ✨</div>
+          <p class="short-title">60 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Rockerz 413</p>
+        <div class="price-row">
+            <ins class="price">₹:2,199/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">72% OFF<del>₹: 7,990</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/rockerz-650-pro">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz_650_pp_renders_main_banner.124.png?v=1740735495&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">80 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Rockerz 413</p>
+        <div class="price-row">
+            <ins class="price">₹: 2,799/-</ins>
+            <input class="color-dot" type="color" value="#d1e7ff">
+            <input class="color-dot" type="color" value="#ff0000">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">69% OFF<del>₹:8,990/-</del></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab2 -->
+  <div id="Tab2" class="tab-section">
+    <div class="product-row">
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/nirvana-zenith-pro-wireless-earphones">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/zenith_pro_LR.png?v=1751544158&width=200" alt="">
+          </a>
+          <div class="badge">🎉New Lanch</div>
+          <p class="short-title">40 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Nirvana Zenith Pro</p>
+        <div class="price-row">
+            <ins class="price">₹:2,799/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">81% OFF<del>₹: 14,990</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/airdopes-supreme-long-playback-earbuds">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Supreme_1.jpg?v=1711262453&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">BT CALL</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Airdopes Supreme</p>
+        <div class="price-row">
+            <ins class="price">₹:1,499/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">75% OFF<del>₹: 5,990</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/airdopes-161">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161.png?v=1745235467&width=200" alt="">
+          </a>
+          <div class="badge trend">✨Trending</div>
+          <p class="short-title">30W RMS Sound</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+         <p class="product-name">boAt Airdopes 161</p>
+        <div class="price-row">
+            <ins class="price">₹:999/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">60% OFF<del>₹: 2,490</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/airdopes-311-pro-wireless-earbuds">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_311_Pro.jpg?v=1716880848&width=200" alt="">
+          </a>
+          <div class="badge trend">✨  TRENDING ✨</div>
+          <p class="short-title">60 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Airdopes 311 PRO</p>
+        <div class="price-row">
+            <ins class="price">₹:999/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">80% OFF<del>₹: 4,990</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/nirvana-ion-anc-earbuds">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/ion_anc_1.png?v=1740725927&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">30 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Nirvana Ion ANC</p>
+        <div class="price-row">
+            <ins class="price">₹:1,999/-</ins>
+            <input class="color-dot" type="color" value="#d1e7ff">
+            <input class="color-dot" type="color" value="#ff0000">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">80% OFF<del>₹: 9,990</del></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab3 --> 
+  <div id="Tab3" class="tab-section">
+    <div class="product-row">
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/immortal-128-gaming-earbuds">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/ezgif-1-6381642bb4.gif?v=1685013470&width=200" alt="">
+          </a>
+          <div class="badge">🎉New Lanch</div>
+          <p class="short-title">80 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Immortal 121</p>
+        <div class="price-row">
+            <ins class="price">₹:1,499/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">57% OFF<del>₹: 3,490</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/immortal-katana-blade-gaming-earbuds">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Katana_Blade.webp?v=1700734447&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">BT CALLING</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Airdopes Supreme</p>
+        <div class="price-row">
+            <ins class="price">₹:2,299/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">43% OFF<del>₹: 3,990</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/airdopes-immortal-141-gaming-earbuds">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Immortal-141.gif?v=1698293993&width=200" alt="">
+          </a>
+          <div class="badge trend">✨Trending</div>
+          <p class="short-title">30W RMS Sound</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Airdopes 161</p>
+        <div class="price-row">
+            <ins class="price">₹2,299/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">34% OFF<del>₹: ₹: 3,490</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/immortal-128-gaming-earbuds">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Immortal-128.gif?v=1698294147&width=200" alt="">
+          </a>
+          <div class="badge trend">✨  TRENDING ✨</div>
+          <p class="short-title">60 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Airdopes 311 PRO</p>
+        <div class="price-row">
+            <ins class="price">₹1,499/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">57% OFF<del>₹: 4,490</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/boat-airdopes-118-earbuds-with-13mm-drivers-beast%E2%84%A2-mode-for-gamers-enx%E2%84%A2-technology">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes-115_1.jpg?v=1686139410&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">80 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Nirvana Ion ANC</p>
+        <div class="price-row">
+            <ins class="price">₹:2,490/-</ins>
+            <input class="color-dot" type="color" value="#d1e7ff">
+            <input class="color-dot" type="color" value="#ff0000">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">16% OFF<del>₹: 2,990/-</del></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab4 -->
+  <div id="Tab4" class="tab-section">
+    <div class="product-row">
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/wave-elevate-pro-smartwatch">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Wave_Elevate_Pro.webp?v=1698747885&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">BT CAll</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Wave Elevate Pro </p>
+        <div class="price-row">
+            <ins class="price">₹:999/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">80% OFF<del>₹:4990</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/boat-wave-arcade-calling-smart-watch">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Wave_Genesis.gif?v=1698295437&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">BT CAll</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Wave Arcade</p>
+        <div class="price-row">
+            <ins class="price">₹:1299/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">84% OFF<del>₹:7990</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/boat-wave-arcade-calling-smart-watch">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Wave_Arcade.webp?v=1703585870&width=200" alt="">
+          </a>
+          <div class="badge trend">✅EXTRA 200₹OFF</div>
+          <p class="short-title">IPS Display</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Wave Arcade</p>
+        <div class="price-row">
+            <ins class="price">₹:1299/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">84% OFF<del>₹:7551</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/ultima-prism-amoled-display-smartwatch">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Ultima_Prism.webp?v=1701692613&width=200" alt="">
+          </a>
+          <div class="badge trend">🎉New Lanch</div>
+          <p class="short-title">AMOLED Display</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Ultima Prism </p>
+        <div class="price-row">
+            <ins class="price">₹:1899/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">73% OFF<del>₹:8999/-</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/lunar-call-pro-heart-rate-monitoring-smart-watch">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Lunar_call.webp?v=1703585871&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">Round Display</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Lunar Call</p>
+        <div class="price-row">
+            <ins class="price">₹:1999/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">71% OFF<del>₹:6990</del></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab5 -->
+  <div id="Tab5" class="tab-section">
+    <div class="product-row">
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/stone-350-pro-portable-speaker">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_350_pro_1.png?v=1742303499&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">40 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Stone 350 pro</p>
+        <div class="price-row">
+            <ins class="price">₹:1,399/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">72% OFF<del>₹:4,999</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/boat-party-pal-63-bluetooth-speaker-with-30w-boat-signature">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/63_pro_LR.png?v=1724672727&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">BT CALL</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat boat party pal 63 pro</p>
+        <div class="price-row">
+            <ins class="price">₹:1,399/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">84% OFF<del>₹: 4,999</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/stone-arc-pro-portable-speaker">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_Arc_pro__1.png?v=1754993440&width=200" alt="">
+          </a>
+          <div class="badge trend">✨Trending</div>
+          <p class="short-title">30W RMS Sound</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Storm Arc Pro</p>
+        <div class="price-row">
+            <ins class="price">₹:4,499/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">65% OFF<del>₹: 12,990</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/party-pal-390-bluetooth-party-speaker">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/PP_390.jpg?v=1696846211&width=200" alt="">
+          </a>
+          <div class="badge trend">✨  TRENDING ✨</div>
+          <p class="short-title">60 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boat Party Pal 390</p>
+        <div class="price-row">
+            <ins class="price">₹:12,990/-</ins>
+            <input class="color-dot" type="color" value="#d4ffd1">
+            <input class="color-dot" type="color" value="#ffffff">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">72% OFF<del>₹: 34990</del></p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div>
+          <a href="https://www.boat-lifestyle.com/products/party-pal-600-bluetooth-speaker">
+            <img class="product-img" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/PP_600_LI_1_1.png?v=1741082289&width=200" alt="">
+          </a>
+          <div class="badge">✅EXTRA 200₹OFF</div>
+          <p class="short-title">80 Hrs Playback</p>
+          <div class="rating"><p>⭐4.8</p></div>
+        </div>
+        <p class="product-name">boAt Rockerz 413</p>
+        <div class="price-row">
+            <ins class="price">₹: 19,990/-</ins>
+            <input class="color-dot" type="color" value="#d1e7ff">
+            <input class="color-dot" type="color" value="#ff0000">
+            <input class="color-dot" type="color" value="#d1e7ff">
+          </p>
+          <p class="discount" style="color: rgb(21, 207, 71);">69% OFF<del>₹:44,990/-</del></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script>
+  function openTab(evt, tabName) {
+    const tabSections = document.getElementsByClassName("tab-section");
+    for (let i = 0; i < tabSections.length; i++) {
+      tabSections[i].style.display = "none";
+    }
+    
+    const tabButtons = document.getElementsByClassName("tablinks");
+    for (let i = 0; i < tabButtons.length; i++) {
+      tabButtons[i].classList.remove("active");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    const firstTab = document.querySelector(".tablinks");
+    if (firstTab) {
+      firstTab.click();
+    }
+  });
+</script>
+<p>Join the Tribe</p>
+  <video class="hoverVideo1" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_iopw61jyiqp2ur4lkmb8v99z.mp4" type="video/mp4">
+</video>
+
+<video class="hoverVideo1" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_n8398cnfdzlxagw1ywk4qsxr.mp4" type="video/mp4">
+</video>
+
+<video class="hoverVideo1" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_xpg45x3tsvrtg8ucgujmpt3o.mp4" type="video/mp4">
+</video>
+
+<video class="hoverVideo1" muted>
+  <source src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_gMW8dkmTGwBEODDUSPloV.mp4" type="video/mp4">
+</video>
+
+<script>
+  // Select all videos with class "hoverVideo"
+  const videoss = document.querySelectorAll(".hoverVideo1");
+
+  videoss.forEach(video => {
+    // Play on hover
+    video.addEventListener("mouseenter", () => {
+      video.play();
+    });
+
+    // Pause on leave
+    video.addEventListener("mouseleave", () => {
+      video.pause();
+    });
+  });
+</script>
+
+    </div>
+  <style>
+    .hov {
+      display: flex;
+      flex-wrap: wrap; /* allows wrapping on small screens */
+      gap: 10px; /* space between items */
+      justify-content: center; /* center align */
+      padding: 10px;
+    }
+
+    .hov h5 {
+      border: 2px solid red;
+      border-radius: 5px;
+      padding: 8px 15px;
+      margin: 0;
+      font-size: 16px;
+      cursor: pointer;
+      flex: 1 1 auto; /* responsive sizing */
+      text-align: center;
+      min-width: 150px; /* prevent too small boxes */
+    }
+
+    /* Responsive font scaling */
+    @media (max-width: 768px) {
+      .hov h5 {
+        font-size: 14px;
+        min-width: 120px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hov {
+        flex-direction: column; /* stack items vertically */
+        align-items: center;
+      }
+      .hov h5 {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style> 
+  </div> <br>
+      
+<!-- FOOTER START -->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>Socials</h1>
+    <ul>
+      
+      <li><a href="https://github.com/">GitHub </a></li>
+      <li><a href="">Linkedin </a></li>
+      
+
+  </div>  
+  <div class="col">
+    <h1>Resources</h1>
+    <ul>
+      <li>Webmail</li>
+      <li>Email</li>
+    </ul>
+  </div>
+
+  <div class="col">
+    <h1>ADDRESS</h1>
+    <ul>
+      <li>Salem,india </li>
+      <li>be mechanical </li>
+    </ul>
+  </div>
+
+  <div class="col">
+    <h1>ADDRESS</h1>
+    <ul>
+      <li>UMPSA,paavai eng clg  </li>
+      <li> </li>
+    </ul>
+  </div>
+  
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- END OF FOOTER -->
+</body>
+</html>

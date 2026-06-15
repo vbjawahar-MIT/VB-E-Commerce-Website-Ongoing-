@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.js">
+</head>
+<body>
+    <div class="instafeed-hover-layer " data-feed-id="40984-image" data-instafeed-open-id="3-feed-40984" style="border-radius:0px;"><div class="instafeed-hover-icon"><img class="instafeed-lazy-image instafeed-lazy-image--handled" src="https://instafeed.nfcube.com/assets/img/instagram-icon-v2.svg" data-instafeed-src="https://instafeed.nfcube.com/assets/img/instagram-icon-v2.svg" alt=""></div></div>
+
+<form method="post" th:object="${model}">
+    <label for="name">Enter Your Name</label>
+    <input type="text" id="name" th:field="*{name}">
+</form>
+
+
+</body>
+</html>
+
+
